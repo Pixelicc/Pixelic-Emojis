@@ -33,7 +33,7 @@ Options:
 #### Using raw Hypixel data:
 
 ```js
-const pixelicEmojis = require("./index");
+const pixelicEmojis = require("pixelic-emojis");
 const fetch = (...args) => import("node-fetch").then(({ default: fetch }) => fetch(...args));
 
 const res = await fetch("https://api.hypixel.net/player?uuid=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&key=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx");
@@ -57,7 +57,7 @@ console.log(rankEmoji);
 #### Using already parsed data:
 
 ```js
-const pixelicEmojis = require("./index");
+const pixelicEmojis = require("pixelic-emojis");
 
 const rankEmoji = pixelicEmojis.parseRankEmoji("MVP++", "LIGHT_PURPLE", null);
 
