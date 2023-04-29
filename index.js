@@ -110,7 +110,7 @@ const parseRankEmoji = (rank, plusColor, plusPlusColor) => {
   if (rank === "MVP_PLUS_PLUS") return rankEmojiConversion[`MVP_PLUS_PLUS-${plusColor}-${plusPlusColor}`];
   if (rank === "MVP_PLUS") return rankEmojiConversion[`MVP_PLUS-${plusColor}`];
   if (rank === "MVP") return rankEmojiConversion["MVP"];
-  if (rank === "VIP+") return rankEmojiConversion["VIP+"];
+  if (rank === "VIP_PLUS") return rankEmojiConversion["VIP_PLUS"];
   if (rank === "VIP") return rankEmojiConversion["VIP"];
   if (rank === null) return "";
   return new Error("[pixelic-emojis] Unable to parse rankEmoji!");
